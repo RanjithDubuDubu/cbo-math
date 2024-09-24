@@ -53,7 +53,7 @@ class User extends Authenticatable implements CanSendOTPContract
      *
      * @var string
      */
-    protected $table = 'users';
+    protected $table = 'user';
 
     /**
      * The attributes that are mass assignable.
