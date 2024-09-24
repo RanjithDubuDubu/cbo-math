@@ -47,7 +47,7 @@ $(document).ready(function() {
                     sessionStorage.setItem('user_details', JSON.stringify(response));
                     getstore(response.id,response);
                     $(".submit_button").removeClass("active");
-                    window.location.href= 'dashboard';
+                    // window.location.href= 'dashboard';
                 },
                 error: function(response) { 
                     console.log(response.responseJSON.error);
