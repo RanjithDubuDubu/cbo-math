@@ -77,9 +77,9 @@ class LoginController extends ApiController
     }
 
     public function sessionstorage(Request $request){
-        dd($request);
+        // dd($request);
         $user_data = User::find($request['user_details']['id']);  
-        auth('web')->login($user_data); 
+        auth('web')->login($request['user_details']); 
         session(['user_details' => $request['user_details']]);
         $response = [
             "status"=>true,
